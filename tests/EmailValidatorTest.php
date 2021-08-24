@@ -15,11 +15,11 @@ class EmailValidatorTest extends TestCase
     {
         $mock = new MockHandler([
             new Response(200, [], json_encode([
-                'email'      => getenv('EMAIL'),
-                'valid'      => true,
+                'email' => getenv('EMAIL'),
+                'valid' => true,
                 'disposable' => false,
                 'mx_records' => true,
-                'exists'     => null,
+                'exists' => null,
             ])),
         ]);
 
@@ -41,7 +41,7 @@ class EmailValidatorTest extends TestCase
     {
         $mock = new MockHandler([
             new Response(200, [], json_encode([
-                'id'     => '00000000-0000-0000-0000-000000000000',
+                'id' => '00000000-0000-0000-0000-000000000000',
                 'status' => 'pending',
             ])),
         ]);
@@ -59,7 +59,6 @@ class EmailValidatorTest extends TestCase
 
         $this->assertArrayHasKey('id', $details);
         $this->assertArrayHasKey('status', $details);
-
     }
 
     public function test_report_details()
@@ -68,22 +67,22 @@ class EmailValidatorTest extends TestCase
 
         $mock = new MockHandler([
             new Response(200, [], json_encode([
-                'id'      => $reportId,
-                'status'  => 'success',
+                'id' => $reportId,
+                'status' => 'success',
                 'payload' => [
-                    getenv('EMAIL')     => [
-                        'email'      => getenv('EMAIL'),
-                        'valid'      => true,
+                    getenv('EMAIL') => [
+                        'email' => getenv('EMAIL'),
+                        'valid' => true,
                         'disposable' => false,
                         'mx_records' => true,
-                        'exists'     => true,
+                        'exists' => true,
                     ],
                     'this.is@email.com' => [
-                        'email'      => 'this.is@email.com',
-                        'valid'      => true,
+                        'email' => 'this.is@email.com',
+                        'valid' => true,
                         'disposable' => false,
                         'mx_records' => false,
-                        'exists'     => false,
+                        'exists' => false,
                     ],
                 ],
             ])),

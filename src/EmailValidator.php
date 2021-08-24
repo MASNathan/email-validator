@@ -21,11 +21,11 @@ final class EmailValidator
     private function post(string $section, array $params): ResponseInterface
     {
         return $this->client->post(sprintf("https://%s/api/%s", $this->host, $section), [
-            'timeout'     => 30,
+            'timeout' => 30,
             'form_params' => $params,
-            'headers'     => [
+            'headers' => [
                 'x-rapidapi-host' => $this->host,
-                'x-rapidapi-key'  => $this->key,
+                'x-rapidapi-key' => $this->key,
             ],
         ]);
     }
@@ -36,7 +36,7 @@ final class EmailValidator
             'timeout' => 30,
             'headers' => [
                 'x-rapidapi-host' => $this->host,
-                'x-rapidapi-key'  => $this->key,
+                'x-rapidapi-key' => $this->key,
             ],
         ]);
     }
