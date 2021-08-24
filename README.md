@@ -11,6 +11,8 @@ What this API does is check if the email address is correctly formatted, is from
 the domain is reachable. This way you can filter out spam and one-shot accounts decreasing the rate of fake or invalid
 accounts on your database.
 
+Request your API key [here](https://rapidapi.com/MASNathan/api/email-validator8/)
+
 ## Installation
 
 You can install the package via composer:
