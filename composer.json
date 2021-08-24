@@ -1,0 +1,49 @@
+{
+    "name": "masnathan/email-validator",
+    "description": "This is an easy way to check if a email address is acceptable so you can avoid fake/invalid users on your database.",
+    "keywords": [
+        "masnathan",
+        "email-validator"
+    ],
+    "homepage": "https://github.com/masnathan/email-validator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "André Filipe",
+            "email": "andre.r.flip@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.3",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^5.3",
+        "vimeo/psalm": "^4.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Masnathan\\EmailValidator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Masnathan\\EmailValidator\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
