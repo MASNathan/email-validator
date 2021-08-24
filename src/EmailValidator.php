@@ -1,6 +1,6 @@
 <?php
 
-namespace Masnathan\EmailValidator;
+namespace MASNathan\EmailValidator;
 
 use GuzzleHttp\Client;
 use Psr\Http\Message\ResponseInterface;

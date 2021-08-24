@@ -7,7 +7,9 @@
 
 This is an easy way to check if a email address is acceptable so you can avoid fake/invalid users on your database.
 
-What this API does is check if the email address is correctly formatted, is from a disposable or temporary service and the domain is reachable. This way you can filter out spam and one-shot accounts decreasing the rate of fake or invalid accounts on your database.
+What this API does is check if the email address is correctly formatted, is from a disposable or temporary service and
+the domain is reachable. This way you can filter out spam and one-shot accounts decreasing the rate of fake or invalid
+accounts on your database.
 
 ## Installation
 
@@ -20,8 +22,20 @@ composer require masnathan/email-validator
 ## Usage
 
 ```php
-$email-validator = new Masnathan\EmailValidator();
-echo $email-validator->echoPhrase('Hello, Masnathan!');
+use MASNathan\EmailValidator\EmailValidator;
+
+$emailValidator = new EmailValidator('email-validator8.p.rapidapi.com', 'super-secret-api-key');
+
+$details = $emailValidator->check('some-email@gmail.com');
+
+var_dump($details);
+// array:5 [
+//   "email" => "some-email@gmail.com"
+//   "valid" => true
+//   "disposable" => false
+//   "mx_records" => true
+//   "exists" => null
+// ]
 ```
 
 ## Testing

@@ -1,12 +1,12 @@
 <?php
 
-namespace Masnathan\EmailValidator\Tests;
+namespace MASNathan\EmailValidator\Tests;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Masnathan\EmailValidator\EmailValidator;
+use MASNathan\EmailValidator\EmailValidator;
 use PHPUnit\Framework\TestCase;
 
 class EmailValidatorTest extends TestCase

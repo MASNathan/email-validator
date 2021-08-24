@@ -27,19 +27,19 @@
     },
     "autoload": {
         "psr-4": {
-            "Masnathan\\EmailValidator\\": "src"
+            "MASNathan\\EmailValidator\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Masnathan\\EmailValidator\\Tests\\": "tests"
+            "MASNathan\\EmailValidator\\Tests\\": "tests"
         }
     },
     "scripts": {
         "psalm": "vendor/bin/psalm",
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
-        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes src/"
     },
     "config": {
         "sort-packages": true
