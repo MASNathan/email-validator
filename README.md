@@ -1,8 +1,8 @@
 # Email Validator
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/masnathan/email-validator.svg?style=flat-square)](https://packagist.org/packages/masnathan/email-validator)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/masnathan/email-validator/run-tests?label=tests)](https://github.com/masnathan/email-validator/actions?query=workflow%3ATests+branch%3Amaster)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/masnathan/email-validator/Check%20&%20fix%20styling?label=code%20style)](https://github.com/masnathan/email-validator/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/masnathan/email-validator/run-tests?label=tests)](https://github.com/masnathan/email-validator/actions?query=workflow%3ATests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/masnathan/email-validator/Check%20&%20fix%20styling?label=code%20style)](https://github.com/masnathan/email-validator/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/masnathan/email-validator.svg?style=flat-square)](https://packagist.org/packages/masnathan/email-validator)
 
 This is an easy way to check if a email address is acceptable so you can avoid fake/invalid users on your database.
